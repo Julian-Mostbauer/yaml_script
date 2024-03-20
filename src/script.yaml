@@ -1,0 +1,13 @@
+entry_point: "main"
+variables:
+  - name: "name"
+    content_type: "String"
+    content: "Erik"
+functions:
+ -  name: "main" 
+    content: "fn_call(some_other)"
+    return_type: "void"
+ 
+ -  name: "some_other"
+    content: "println(name)" 
+    return_type: "void"
